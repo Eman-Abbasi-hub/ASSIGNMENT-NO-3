@@ -208,3 +208,12 @@ input[type="checkbox"] {
         margin: 5px 0;
     }
 }
+/* Custom Improvement: Smooth scrolling and selection color */
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #7042b5;
+    color: white;
+}
