@@ -1,19 +1,20 @@
 <html lang="en">
 <head>
     <title>Student Admission Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="page-header">
         <h1>Student Admission Form</h1>
         <p>Please complete the form below to apply for addmission.</p>
     </header>
 
     <main>
-        <form>
+        <form class="admission-form">
 
-            <fieldset>
+            <fieldset class="form-section">
                 <legend>Personal Information</legend>
 
                 <label for="fullName">Full Name:</label>
@@ -72,7 +73,7 @@
 
             <br>
 
-            <fieldset>
+            <fieldset class="form-section">
                 <legend>Course Selection</legend>
 
                 <label for="course">Choose Your Course:</label>
@@ -97,7 +98,7 @@
 
             <br>
 
-            <fieldset>
+            <fieldset class="form-section">
                 <legend>Preferred Class Shift</legend>
 
                 <input
@@ -130,7 +131,7 @@
 
             <br>
 
-            <fieldset>
+            <fieldset class="form-section">
                 <legend>Current Skills (Optional)</legend>
 
                 <input
@@ -169,8 +170,8 @@
 
             <br>
 
-            <fieldset>
-                <legend>Motivation  (Optional)</legend>
+            <fieldset class="form-section">
+                <legend>Motivation  </legend>
 
                 <label for="motivation">
                     Why do you want to join your preffered course?
@@ -187,7 +188,7 @@
 
             <br>
 
-            <fieldset>
+            <fieldset class="form-section">
                 <legend>Additional Information (Optional)</legend>
 
                 <label for="portfolio">Portfolio Website URL:</label>
@@ -207,16 +208,19 @@
 
             <br>
 
-            <button type="submit">Submit Application</button>
-            <button type="reset">Clear Form</button>
+            <button type="submit" class="submit-btn">
+             Submit Application
+            </button>
+            <button type="reset" class="reset-btn">
+             Clear Form
+              </button>
 
         </form>
     </main>
-
-    <footer>
-        <p>Student Admission Form- 
-           Assignment 03-Bano Qabil</p>
-    </footer>
-
+   
+           <footer class="page-footer">
+    <p>Student Name: Eman Majid Abbasi</p>
+    <p> Roll Number: 7 | Assignment 05 </p>
+</footer>
 </body>
 </html>

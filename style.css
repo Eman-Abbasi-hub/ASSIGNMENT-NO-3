@@ -1,0 +1,210 @@
+
+/* =================================
+   STUDENT ADMISSION FORM
+   Theme: Purple and Lavender
+   ================================= */
+
+/* Custom Improvement 1:
+   A soft gradient background and a shadowed form card
+   make the admission page look modern and professional.
+   Properties: background, box-shadow, border-radius. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px 16px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f4efff, #e8e0fa);
+    color: #30234a;
+}
+
+/* Element selectors */
+
+h1 {
+    color: #542c91;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Class selectors */
+
+.page-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.admission-form {
+    background-color: #ffffff;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 28px;
+    border: 1px solid #d8c8f0;
+    border-top: 6px solid #7042b5;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(73, 43, 115, 0.12);
+}
+
+.form-section {
+    border: 1px solid #dcd0ef;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 22px;
+    background-color: #fcfaff;
+}
+
+.form-section legend {
+    color: #6438a3;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+/* Consistent input styling */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cbb9e6;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #30234a;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+/* Custom Improvement 2:
+   A purple focus outline helps users identify the field
+   they are currently typing in.
+   Properties: border-color, outline, box-shadow. */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #bba0ed;
+    border-color: #7042b5;
+    box-shadow: 0 0 6px rgba(112, 66, 181, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Two ID selectors */
+
+#fullName {
+    background-color: #fdfbff;
+}
+
+#motivation {
+    line-height: 1.6;
+}
+
+/* Radio buttons and checkboxes */
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #7042b5;
+    margin-right: 8px;
+}
+
+.form-section input[type="radio"] + label,
+.form-section input[type="checkbox"] + label {
+    display: inline-block;
+    font-weight: normal;
+    margin: 0 0 12px;
+}
+
+/* Buttons */
+
+.submit-btn,
+.reset-btn {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px 5px 5px 0;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.submit-btn {
+    background-color: #6438a3;
+    color: #ffffff;
+}
+
+.submit-btn:hover {
+    background-color: #452274;
+    transform: translateY(-2px);
+}
+
+.reset-btn {
+    background-color: #eee7f8;
+    color: #452274;
+}
+
+.reset-btn:hover {
+    background-color: #d9c9f0;
+}
+
+/* Footer */
+
+.page-footer {
+    text-align: center;
+    margin: 25px auto 0;
+    font-size: 12px;
+    color: #655579;
+}
+
+/* Mobile responsive layout */
+
+@media (max-width: 500px) {
+    body {
+        padding: 18px 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .admission-form {
+        padding: 16px;
+    }
+
+    .form-section {
+        padding: 14px;
+    }
+
+    .submit-btn,
+    .reset-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
